@@ -13,9 +13,8 @@ public class SpringBootHibernateMysqlApplication {
         SpringApplication.run(SpringBootHibernateMysqlApplication.class, args);
     }
     
-	/*
-	 * @Bean public MappingJackson2XmlHttpMessageConverter
-	 * mappingJackson2XmlHttpMessageConverter() { return new
-	 * MappingJackson2XmlHttpMessageConverter(); }
-	 */
+    @Bean
+    public MappingJackson2XmlHttpMessageConverter mappingJackson2XmlHttpMessageConverter() {
+        return new MappingJackson2XmlHttpMessageConverter();
+    }
 }
